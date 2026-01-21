@@ -9,11 +9,11 @@
 }
 
 * {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
@@ -21,22 +21,27 @@ html {
 }
 
 nav {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .logo {
-  color: var(--color-3); /* Cor base do link */
+  color: var(--color-3);
+  /* Cor base do link */
 }
 
 nav a {
-  color: var(--color-3); /* Cor base do link */
-  text-shadow: 0 0 5px var(--color-3), 0 0 10px var(--color-3), 0 0 20px var(--color-3), 0 0 30px var(--color-3), 0 0 40px var(--color-3); /* Efeito Neon */
-  transition: text-shadow 0.3s ease-in-out; /* Transição suave */
+  color: var(--color-3);
+  /* Cor base do link */
+  text-shadow: 0 0 5px var(--color-3), 0 0 10px var(--color-3), 0 0 20px var(--color-3), 0 0 30px var(--color-3), 0 0 40px var(--color-3);
+  /* Efeito Neon */
+  transition: text-shadow 0.3s ease-in-out;
+  /* Transição suave */
 }
 
 nav a:hover {
-  text-shadow: 0 0 10px var(--color-3), 0 0 20px var(--color-3), 0 0 30px var(--color-3), 0 0 40px var(--color-3); /* Efeito Neon mais forte no hover */
+  text-shadow: 0 0 10px var(--color-3), 0 0 20px var(--color-3), 0 0 30px var(--color-3), 0 0 40px var(--color-3);
+  /* Efeito Neon mais forte no hover */
 }
 
 
@@ -51,6 +56,7 @@ nav a:hover {
   top: 0;
   z-index: 1000;
   gap: 20px;
+  box-shadow: 2px 2px 8px #ffffff4f;
 }
 
 .logo {
@@ -61,38 +67,71 @@ nav a:hover {
 }
 
 header {
-    background-color: rgb(15, 15, 15);
-    display: flex;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .curriculo {
-    width: 120px;
-    height: 40px;
-    padding: 8px;
-    border-radius: 20px;
-    border: none;
-    background: rgb(28, 187, 28);
-    color: #fff;
+  width: 120px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(28, 187, 28);
+  color: #fff;
 }
 
 /* BODY */
 body {
-  background: #222;
+  background: #000000;
   color: #fff;
   overflow-x: hidden;
 }
 
 .inicio {
-    text-align: center;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  /* Usa o Flexbox para organizar os elementos */
+  align-items: center;
+  /* Alinha os itens verticalmente ao centro */
+  justify-content: space-around;
+  padding: 20px;
+  /* Espaçamento interno */
+  height: 100vh;
 }
 
 img#vitor {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  color: var(--color-3);
+  /* Cor base do link */
+  border: 2px solid #00EFEF;
+  box-shadow: 10px -100px 150px #21C5C5;
+}
+
+.h1-de-vitor {
+  font-size: 3rem;
+  /* Tamanho da fonte */
+  font-weight: bold;
+  background: linear-gradient(to right, #21C5C5, #21C5C5, #ffffff);
+  /* Gradiente da esquerda para a direita */
+  -webkit-background-clip: text;
+  /* Faz o gradiente "cortar" e aplicar apenas ao texto */
+  color: transparent;
+  /* Torna o texto transparente para exibir o gradiente */
+  line-height: 45px;
+  text-align: left;
+  margin: 0 150px 0 0;
+}
+
+.div-1 p {
+  text-align: left;
+  margin: 0 150px 0 0;
 }
